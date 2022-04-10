@@ -19,7 +19,7 @@ const version = "1.0.0"
 type config struct {
 	port int
 	env  string
-	db struct {
+	db   struct {
 		dsn string
 	}
 	jwt struct {
@@ -44,7 +44,7 @@ func main() {
 
 	flag.IntVar(&cfg.port, "port", 4000, "Server port to listen on")
 	flag.StringVar(&cfg.env, "env", "development", "Application environment (development|production")
-	flag.StringVar(&cfg.db.dsn, "dsn", "postgres://tcs@localhost/go_movies?sslmode=disable", "Postgres connection string")
+	flag.StringVar(&cfg.db.dsn, "dsn", "postgres://aljanji:aljanjictest@localhost/go_movies?sslmode=disable", "Postgres connection string")
 	flag.Parse()
 
 	// read jwt secret from env
