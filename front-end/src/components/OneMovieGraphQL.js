@@ -29,7 +29,7 @@ export default class OneMovieGraphQL extends Component {
       headers: myHeaders,
     };
 
-    fetch(`${process.env.REACT_APP_API_URL}/v1/graphql`, requestOptions)
+    fetch("http://localhost:4000/v1/graphql", requestOptions)
       .then((response) => response.json())
       .then((data) => {
         this.setState({
@@ -55,7 +55,7 @@ export default class OneMovieGraphQL extends Component {
       return (
         <Fragment>
           <h2>
-            Movie: {movie.title} ({movie.year}) 
+            Movie: {movie.title} ({movie.year})
           </h2>
 
           {movie.poster !== "" && (
@@ -68,7 +68,7 @@ export default class OneMovieGraphQL extends Component {
             <small>Rating: {movie.mpaa_rating}</small>
           </div>
 
-          
+         
           <div className="float-end">
             {movie.genres.map((m, index) => (
               <span className="badge bg-secondary me-1" key={index}>
