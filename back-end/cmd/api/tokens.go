@@ -15,7 +15,7 @@ import (
 var validUser = models.User{
 	ID:       10,
 	Email:    "me@here.com",
-	Password: "$2a$12$YZmO3zxVXaKGXORRDxMleOD8COPtz85eSfuxB3ulSwfZmQ6uNzmE2",
+	Password: "$2a$12$lrLBnJ/OC2fVwCD3nc06nOsU7AnMoAZKjm7m2Tkygul4cJ0huHDS2",
 }
 
 type Credentials struct {
