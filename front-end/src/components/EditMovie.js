@@ -102,7 +102,7 @@ export default class EditMovie extends Component {
       return false;
     }
 
-    // we passed, so post info
+    // we passed, so post infoF
     const data = new FormData(evt.target);
     const payload = Object.fromEntries(data.entries());
     const myHeaders = new Headers();
