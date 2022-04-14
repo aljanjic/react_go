@@ -44,7 +44,7 @@ func main() {
 
 	flag.IntVar(&cfg.port, "port", 4000, "Server port to listen on")
 	flag.StringVar(&cfg.env, "env", "development", "Application environment (development|production")
-	flag.StringVar(&cfg.db.dsn, "dsn", "postgres://aljanji:aljanjictest@localhost/go_movies?sslmode=disable", "Postgres connection string")
+	flag.StringVar(&cfg.db.dsn, "dsn", "postgres://aljanjic:FgEQ.xSv.eg3nEGt.5SLVT4@localhost/go_movies?sslmode=disable", "Postgres connection string")
 	flag.Parse()
 
 	// Read jwt secret from env
