@@ -1,1 +1,1 @@
-# last_try
+# React and GO course project
